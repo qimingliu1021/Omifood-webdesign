@@ -39,7 +39,7 @@
   <body>
     <header class="header sticky">
       <a href="#">
-        <img class="logo" alt="'Omnifood logo" src="img/omnifood-logo.png" />
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -71,7 +71,7 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#cta" class="btn btn--full margin-reight-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
             <a href="#how" class="btn btn--outline">Learn more &darr;</a>
@@ -90,16 +90,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <!-- <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="woman enjoying food, meals in storage container, food bowls on a table"
-            /> -->
-            <img
-              src="img/hero.webp"
-              class="hero-img"
-              alt="woman enjoying food, meals in storage container, food bowls on a table"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="='img/webp" />
+              <source srcset="img/hero.png" type="='img/png" />
+              <img
+                src="img/hero.png"
+                class="hero-img"
+                alt="woman enjoying food, meals in storage container, food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -267,9 +266,9 @@
             </div>
           </div>
 
-          <div class="diets">
+          <ul class="diets">
             <h3 class="heading-tertiary">Works with any diet</h3>
-            <div class="list">
+            <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
                 ><span>Vegetarian</span>
@@ -306,8 +305,8 @@
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
                 ><span>Kid-friendly</span>
               </li>
-            </div>
-          </div>
+            </ul>
+          </ul>
         </div>
         <div class="container all-recipes">
           <a href="#" class="link">See all recipes &rarr;</a>
@@ -618,9 +617,9 @@
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
-                    <option value="youtube">Podcast</option>
-                    <option value="youtube">Facebook ad</option>
-                    <option value="youtube">Others</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
                   </select>
                 </div>
 
